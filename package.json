@@ -1,0 +1,19 @@
+{
+  "name": "mrstatus",
+  "version": "1.0.0-build-00001",
+  "description": "A client for interacting with status.milesr.dev API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [],
+  "author": "MilesSRC",
+  "license": "ISC",
+  "dependencies": {
+    "@types/app-root-path": "^1.2.4",
+    "app-root-path": "^3.0.0",
+    "axios": "^0.27.2",
+    "socket.io-client": "^4.5.1"
+  },
+  "files": [
+    "/dist"
+  ]
+}
