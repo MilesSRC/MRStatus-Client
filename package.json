@@ -1,6 +1,6 @@
 {
   "name": "mrstatus",
-  "version": "1.0.0-build-00001",
+  "version": "1.0.1",
   "description": "A client for interacting with status.milesr.dev API",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,7 +13,15 @@
     "axios": "^0.27.2",
     "socket.io-client": "^4.5.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MilesSRC/MRStatus-Client",
+    "directory": "mrstatus"
+  },
   "files": [
     "/dist"
-  ]
+  ],
+  "devDependencies": {
+    "@types/node": "^17.0.41"
+  }
 }

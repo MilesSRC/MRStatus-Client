@@ -162,7 +162,12 @@ export class Client {
         /* Send updates when connected and authorized every pollingRate */
         if(this.connected && this.authorized){
             this.socket.emit("update", {
-                data: this.settings?.data
+                data: {
+                    process: {
+                        pid: process.pid,
+                        ram: process.memoryUsage().heapUsed,
+                    }
+                }
             });
         }
 
