@@ -80,8 +80,7 @@ export class Client {
             const handshake: MRStatusHandshakeResponse = res.data;
             this.pollingRate = handshake.polling;
 
-            this.socket = io(this.settings?.api.split(":").slice(0,2).join(":") + ":" + handshake.socket);
-
+            this.socket = io(this.settings?.api + "/socket/");
             this.socket.on('error', (err) => {
                 throw err;
             });
